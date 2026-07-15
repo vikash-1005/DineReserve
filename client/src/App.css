@@ -1,0 +1,218 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fb;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e67e22 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #e67e22 !important;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,.55),
+              rgba(0,0,0,.55)),
+              url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h1{
+  font-size:60px;
+  font-weight:bold;
+}
+
+.hero p{
+  font-size:20px;
+  margin-top:20px;
+}
+
+/* Buttons */
+
+.btn-orange{
+  background:#e67e22;
+  color:white;
+  border:none;
+  padding:12px 28px;
+  border-radius:30px;
+  transition:.3s;
+}
+
+.btn-orange:hover{
+  background:#cf711c;
+  color:white;
+  transform:scale(1.05);
+}
+
+.btn-outline-orange{
+  border:2px solid #e67e22;
+  color:#e67e22;
+  border-radius:30px;
+  padding:12px 28px;
+}
+
+.btn-outline-orange:hover{
+  background:#e67e22;
+  color:white;
+}
+
+/* Cards */
+
+.card{
+  border:none;
+  border-radius:20px;
+  transition:.3s;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.card img{
+  height:220px;
+  object-fit:cover;
+}
+
+/* Section */
+
+.section-title{
+  text-align:center;
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+/* Feature Cards */
+
+.feature-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.feature-icon{
+  font-size:50px;
+  color:#e67e22;
+  margin-bottom:15px;
+}
+
+/* Forms */
+
+.form-control,
+.form-select{
+  border-radius:12px;
+  padding:12px;
+}
+
+.form-control:focus{
+  border-color:#e67e22;
+  box-shadow:none;
+}
+
+/* Reservation Card */
+
+.reservation-card{
+  border-left:6px solid #e67e22;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card{
+  border-radius:20px;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+.dashboard-card h2{
+  font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+  background:#212529;
+  color:white;
+  padding:50px 0;
+  margin-top:60px;
+}
+
+footer a{
+  color:#ddd;
+}
+
+footer a:hover{
+  color:#e67e22;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+height:60vh;
+padding:20px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+}
